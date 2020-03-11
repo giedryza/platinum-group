@@ -1,0 +1,80 @@
+.footer {
+  background: $col__black;
+  color: $col__white;
+
+  &__contacts {
+    padding: 2.5rem 0;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $bp__xxs) {
+      flex-direction: column;
+    }
+  }
+
+  &__contacts-block {
+    @media only screen and (max-width: $bp__xxs) {
+      &:not(:last-child) {
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+
+  &__label {
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  &__links-left,
+  &__links-right {
+    display: flex;
+
+    > * {
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &__links-left {
+    @media only screen and (max-width: $bp__md) {
+      flex-direction: column;
+    }
+  }
+
+  &__legal {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+
+    @media only screen and (max-width: $bp__xs) {
+      flex-direction: column;
+    }
+  }
+
+  &__legal-block {
+    @media only screen and (max-width: $bp__xs) {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+      text-align: right;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: inherit;
+      font-size: inherit;
+      letter-spacing: inherit;
+    }
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import 'variables/breakpoints';
+@import 'variables/colors';
+
+@import 'global/base';
+
+@import 'utils/container';
+
+@import '../components/button/button.styles.scss';
+@import '../components/button-flat/button-flat.styles.scss';
+@import '../components/title/title.styles.scss';
+
+@import '../sections/about/about.styles.scss';
+@import '../sections/catalogue/catalogue.styles.scss';
+@import '../sections/contact/contact.styles.scss';
+@import '../sections/footer/footer.styles.scss';
+@import '../sections/header/header.styles.scss';
+@import '../sections/showcase/showcase.styles.scss';

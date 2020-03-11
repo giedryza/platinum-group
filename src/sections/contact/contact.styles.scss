@@ -1,0 +1,37 @@
+.contact {
+  &__form {
+    width: 50%;
+    margin: 0 auto;
+
+    @media only screen and (max-width: $bp__lg) {
+      width: 75%;
+    }
+
+    @media only screen and (max-width: $bp__xs) {
+      width: 95%;
+    }
+  }
+
+  &__input-group {
+    margin-bottom: 3rem;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+    border: 1px solid transparent;
+    border-bottom: 1px solid $col__black;
+    letter-spacing: 3px;
+    outline: none;
+  }
+
+  &__submit-group {
+    text-align: right;
+
+    @media only screen and (max-width: $bp__xxs) {
+      text-align: center;
+    }
+  }
+}

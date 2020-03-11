@@ -1,0 +1,33 @@
+.title {
+  margin: 2.5rem 0 5rem 0;
+
+  &__heading {
+    font-size: 7rem;
+    font-weight: 300;
+    letter-spacing: -5px;
+    margin: 2rem 0;
+    line-height: 0.8;
+    display: inline-block;
+    text-align: right;
+
+    @media only screen and (max-width: $bp__xxs) {
+      font-size: 5rem;
+      letter-spacing: -2px;
+      text-align: center;
+      display: block;
+      padding-top: 1rem;
+    }
+  }
+
+  &__up {
+    display: block;
+  }
+  &__down {
+    display: block;
+    margin-right: 2rem;
+
+    @media only screen and (max-width: $bp__xxs) {
+      margin-right: 0;
+    }
+  }
+}

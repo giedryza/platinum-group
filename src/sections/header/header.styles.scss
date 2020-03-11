@@ -1,0 +1,33 @@
+.header {
+  background: $col__white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 1px solid $col__gray-80;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    padding: 1rem;
+    transition: 0.2s width ease-in;
+    width: 20rem;
+
+    @media only screen and (max-width: $bp__sm) {
+      width: 12.5rem;
+    }
+
+    &.small {
+      width: 12.5rem;
+    }
+
+    > svg {
+      display: block;
+    }
+  }
+}

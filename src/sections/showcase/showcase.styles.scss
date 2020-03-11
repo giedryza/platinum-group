@@ -1,0 +1,47 @@
+.showcase {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: url(./bg.picture.jpg) no-repeat center center/cover;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba($col__gray-50, 0.7);
+  }
+
+  &__content {
+    max-width: 95%;
+    color: $col__black;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  &__title {
+    font-size: 8rem;
+    font-weight: 300;
+    letter-spacing: -5px;
+    margin: 2rem 0;
+
+    @media only screen and (max-width: $bp__xxs) {
+      font-size: 5rem;
+      letter-spacing: -2px;
+    }
+  }
+}
